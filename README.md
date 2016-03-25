@@ -1,4 +1,4 @@
-Slack Invite Automation
+Slack Invite Automation (re-used from : https://github.com/outsideris/slack-invite-automation)
 ------------
 
 A tiny web application to invite a user into your slack team.
