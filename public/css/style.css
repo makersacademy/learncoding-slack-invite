@@ -59,6 +59,7 @@ div#fixedheader {
   border-bottom: 2px solid #ddd;
   color: #AA1925 !important;
   font-size: 18px;
+  transition: all 0.2s ease-in-out;
 }
 div#fixedfooter {
   position: fixed;
@@ -104,7 +105,7 @@ h3 {
 	padding-top: 35px;
 	margin: 0 auto;
 }
-.form {
+.join-form {
 	display: block;
 	margin-bottom: 1.5rem;
 
@@ -121,12 +122,13 @@ margin: 0*/
 #slack-email.field {
 	background: transparent;
 	width: 448px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
+  border: 2px solid #ddd;
+	/*-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;*/
+	/*border-radius: 30px;*/
 	border-right-width: 0;
-	border-bottom-right-radius: 8px;
-	border-top-right-radius: 8px;
+	border-bottom-left-radius: 7px;
+	border-top-left-radius: 7px;
 	padding-left: 1.5rem;
 	line-height: 1.5rem;
 	height: 3.22rem;
@@ -141,18 +143,24 @@ margin: 0*/
   margin-bottom: 15px;*/
 }
 
-#slack-email.submit {
+.submit {
+  border: 2px solid #ddd;
 	border-radius: 0;
 	border-right-width: 0;
-	border-bottom-left-radius: 8px;
-	border-top-left-radius: 8px;
+	border-bottom-right-radius: 7px;
+	border-top-right-radius: 7px;
 	padding-left: 1.5rem;
 	line-height: 1.5rem;
 	height: 3.22rem;
-	width: 80%;
+	min-width: 10em;
 	margin: 0;
 	display: inline-block;
 	float: left;
+  background: rgba(255,255,255,0.3);
+  color: #ffffff;
+  font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  text-align: center;
 }
 
 .submit:hover {
