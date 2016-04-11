@@ -3,7 +3,7 @@ extends layout
 block content
           h1 #{community}
             h2 Enter your email below to join #{community} on slack!
-            .email-capture
+            #container
               form(method="POST", action="/invite")#join-form.form
                   input(type="text", name="email", placeholder="Enter Your Email Address")#slack-email.field
                   if tokenRequired

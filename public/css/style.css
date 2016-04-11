@@ -97,13 +97,13 @@ h3 {
   font-weight: 600;
   color: #ffffff;
 }
-.information p {
+/*.information p {
   font-size: 16px;
   color: #ffffff;
   display: block;
 	width: 480px;
 	padding-top: 35px;
-	margin: 0 auto;
+	margin: 0 auto;*/
 }
 .join-form {
 	display: block;
@@ -120,8 +120,8 @@ margin: 0*/
 }
 
 #slack-email.field {
+  transition: border-color;
 	background: transparent;
-	width: 448px;
   border: 2px solid #ddd;
 	/*-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;*/
@@ -129,11 +129,13 @@ margin: 0*/
 	border-right-width: 0;
 	border-bottom-left-radius: 7px;
 	border-top-left-radius: 7px;
-	padding-left: 1.5rem;
+  padding: 0.75rem;
+	/*padding-left: 1.5rem;
+  padding-right: 1.5rem;*/
 	line-height: 1.5rem;
-	height: 3.22rem;
-  width: 80%;
-	margin: 0;
+	height: 2.5rem;
+  width: 50%;
+  margin-left: 15%;
 	float: left;
 	color: #ffffff;
 	font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -146,14 +148,13 @@ margin: 0*/
 .submit {
   border: 2px solid #ddd;
 	border-radius: 0;
-	border-right-width: 0;
+	border-right-width: 2px;
 	border-bottom-right-radius: 7px;
 	border-top-right-radius: 7px;
-	padding-left: 1.5rem;
+  padding: 0.75rem;
 	line-height: 1.5rem;
-	height: 3.22rem;
+	height: 4.26rem;
 	min-width: 10em;
-	margin: 0;
 	display: inline-block;
 	float: left;
   background: rgba(255,255,255,0.3);
@@ -164,8 +165,10 @@ margin: 0*/
 }
 
 .submit:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   outline: 0
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .error {
   color: #FE7070;
