@@ -38,13 +38,13 @@ html {
   width: 100%;
 }
 
-.header, .content, .bottom, .sep2 {
+/*.header, .content, .bottom, .sep2 {
   width: 100%;
   float: left;
-}
+}*/
 .header {
-  margin-top: 180px;
-  margin-bottom: 40px;
+  /*margin-top: 180px;
+  margin-bottom: 40px;*/
 }
 div#fixedheader {
   position: fixed;
@@ -77,8 +77,10 @@ h1 {
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   padding-bottom: 20px;
-  margin: 250 0 20 0px;
+  margin-top: 140px;
+  margin-bottom: 20px;
   text-align: center;
+  font-weight: 500;
   font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 h2 {
@@ -87,7 +89,7 @@ h2 {
   font-size: 20px;
   color: #ffffff;
   padding-bottom: 60px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 h3 {
@@ -106,8 +108,8 @@ h3 {
   background: rgba(255,255,255,0.1);
   border: 2px solid #ddd;
 	border-right-width: 0;
-	border-bottom-left-radius: 7px;
-	border-top-left-radius: 7px;
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
   padding: 0.75rem;
 	line-height: 1.5rem;
 	height: 2.5rem;
@@ -120,17 +122,20 @@ h3 {
 }
 
 .submit {
+  align-items: flex-start;
   border: 2px solid #ddd;
 	border-radius: 0;
-	border-right-width: 2px;
-	border-bottom-right-radius: 7px;
-	border-top-right-radius: 7px;
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-width: 1;
   padding: 0.75rem;
 	line-height: 1.5rem;
 	height: 4.26rem;
 	min-width: 10em;
 	display: inline-block;
-	float: left;
+	float: center;
   background: rgba(255,255,255,0.4);
   color: #ffffff;
   font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -139,7 +144,39 @@ h3 {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-  transition-delay: initial;
+  transition-delay: 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+@media (max-width: 1022px) {
+  .submit {
+    align-items: flex-start;
+    border: 2px solid #ddd;
+  	border-radius: 8px;
+align-items: center;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    padding: 0.75rem;
+  	line-height: 1.5rem;
+  	height: 4.26rem;
+  	min-width: 10em;
+  	display: inline-block;
+  	float: center;
+    background: rgba(255,255,255,0.4);
+    color: #ffffff;
+    font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
 }
 
 .submit:hover {
@@ -167,11 +204,11 @@ a:visited, a:hover {
   color: #FFFFFF;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
   color: #FFFFFF;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder {
   color: #FFFFFF;
 }
 

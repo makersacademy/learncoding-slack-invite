@@ -1,9 +1,9 @@
 extends layout
 
 block content
-          h1 #{community}
+          h1.tk-futura-pt #{community}
             h2 Enter your email below to join #{community} on slack!
-            #container
+            div#container
               form(method="POST", action="/invite")#join-form.form
                   input(type="text", name="email", placeholder="Enter Your Email Address")#slack-email.field
                   if tokenRequired
