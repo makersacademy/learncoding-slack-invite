@@ -42,6 +42,7 @@ html {
   width: 100%;
   float: left;
 }*/
+
 .header {
   /*margin-top: 180px;
   margin-bottom: 40px;*/
@@ -91,52 +92,54 @@ h2 {
   padding-bottom: 60px;
   margin-top: 20px;
 }
-
 h3 {
   font-size: 28px;
   font-weight: 600;
   color: #ffffff;
 }
-
 .join-form {
-	display: block;
-	margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
 }
-
 #slack-email.field {
   transition: border-color;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: 2px solid #ddd;
-	border-right-width: 0;
-	border-bottom-left-radius: 8px;
-	border-top-left-radius: 8px;
+  border-right-width: 0;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  display: block;
   padding: 0.75rem;
-	line-height: 1.5rem;
-	height: 2.5rem;
+  line-height: 1.5rem;
+  height: 2.5rem;
   width: 50%;
-  margin-left: 15%;
-	float: left;
-	font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-	font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-left: 15%;*/
+  /*float: left;*/
+  font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 18px;
   color: #FFFFFF !important;
 }
-
 .submit {
   align-items: flex-start;
   border: 2px solid #ddd;
-	border-radius: 0;
-	border-bottom-right-radius: 8px;
-	border-top-right-radius: 8px;
-  border-image-repeat: stretch;
+  border-radius: 0;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  /*border-image-repeat: stretch;
   border-image-slice: 100%;
-  border-image-width: 1;
-  padding: 0.75rem;
-	line-height: 1.5rem;
-	height: 4.26rem;
-	min-width: 10em;
-	display: inline-block;
-	float: center;
-  background: rgba(255,255,255,0.4);
+  border-image-width: 1;*/
+  /*padding: 0.75rem;*/
+  line-height: 1.5rem;
+  height: 4.26rem;
+  min-width: 10em;
+  display: inline-block;
+  float: center;
+  background: rgba(255, 255, 255, 0.4);
   color: #ffffff;
   font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 18px;
@@ -148,23 +151,22 @@ h3 {
   vertical-align: middle;
   white-space: nowrap;
 }
-
 @media (max-width: 1022px) {
   .submit {
     align-items: flex-start;
     border: 2px solid #ddd;
-  	border-radius: 8px;
-align-items: center;
+    border-radius: 8px;
+    align-items: center;
     border-image-repeat: stretch;
     border-image-slice: 100%;
     border-image-width: 1;
     padding: 0.75rem;
-  	line-height: 1.5rem;
-  	height: 4.26rem;
-  	min-width: 10em;
-  	display: inline-block;
-  	float: center;
-    background: rgba(255,255,255,0.4);
+    line-height: 1.5rem;
+    height: 4.26rem;
+    min-width: 10em;
+    display: inline-block;
+    float: center;
+    background: rgba(255, 255, 255, 0.4);
     color: #ffffff;
     font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 18px;
@@ -176,9 +178,7 @@ align-items: center;
     vertical-align: middle;
     white-space: nowrap;
   }
-
 }
-
 .submit:hover {
   background: rgba(255, 255, 255, 0.2);
   outline: 0;
@@ -199,23 +199,18 @@ a {
 a:visited, a:hover {
   color: #FFFFFF;
 }
-
 ::-webkit-input-placeholder {
   color: #FFFFFF;
 }
-
 :-moz-placeholder {
   color: #FFFFFF;
 }
-
 ::-moz-placeholder {
   color: #FFFFFF;
 }
-
 :-ms-input-placeholder {
   color: #FFFFFF;
 }
-
-textarea:focus, input:focus{
-    outline: none;
+textarea:focus, input:focus {
+  outline: none;
 }
