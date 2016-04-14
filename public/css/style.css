@@ -3,6 +3,7 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
+  color: #FFFFFF;
 }
 table {
   border-collapse: collapse;
@@ -25,30 +26,31 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: normal;
 }
-html, body {
+html {
   -webkit-font-smoothing: antialiased;
   line-height: 1.5rem;
   margin: 0;
   padding: 0;
   font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  background: #fff url(../images/shop-floor.jpg) center top no-repeat;
+  background: #FFF url(../images/dan-and-students-overhead-70.jpg) center top no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
-padding-left: 0;
-padding-right: 0;
-padding-top: 4.5rem;
 
-}
-.header, .content, .bottom, .sep2 {
+/*.header, .content, .bottom, .sep2 {
   width: 100%;
   float: left;
-}
+}*/
+
 .header {
-  margin-top: 180px;
-  margin-bottom: 40px;
+  /*margin-top: 180px;
+  margin-bottom: 40px;*/
 }
+/*.form {
+  display: block !important;
+  margin: 0 auto !important;
+}*/
 div#fixedheader {
   position: fixed;
   top: 0px;
@@ -56,7 +58,7 @@ div#fixedheader {
   padding: 13.5px 0px 13.5px 10px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #DDD;
   color: #AA1925 !important;
   font-size: 18px;
   transition: all 0.2s ease-in-out;
@@ -80,98 +82,104 @@ h1 {
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   padding-bottom: 20px;
-  margin: 0 0 1.5rem;
+  margin-top: 140px;
+  margin-bottom: 20px;
   text-align: center;
+  font-weight: 500;
   font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 h2 {
   text-align: center;
   font-weight: 300;
   font-size: 20px;
-  color: #ffffff;
+  color: #FFFFFF;
   padding-bottom: 60px;
+  margin-top: 20px;
 }
-
 h3 {
   font-size: 28px;
   font-weight: 600;
-  color: #ffffff;
+  color: #FFFFFF;
 }
-/*.information p {
-  font-size: 16px;
-  color: #ffffff;
+#join-form {
   display: block;
-	width: 480px;
-	padding-top: 35px;
-	margin: 0 auto;*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+  margin-bottom: 1.5rem;
 }
-.join-form {
-	display: block;
-	margin-bottom: 1.5rem;
-
-/*border-radius: 0;
-border-right-width: 0;
-border-bottom-left-radius: 8px;
-border-top-left-radius: 8px;
-padding-left: 1.5rem;
-width: auto;
-margin: 0*/
-
-}
-
 #slack-email.field {
   transition: border-color;
-	background: transparent;
-  border: 2px solid #ddd;
-	/*-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;*/
-	/*border-radius: 30px;*/
-	border-right-width: 0;
-	border-bottom-left-radius: 7px;
-	border-top-left-radius: 7px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #DDD;
+  border-right-width: 0;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  display: block;
   padding: 0.75rem;
-	/*padding-left: 1.5rem;
-  padding-right: 1.5rem;*/
-	line-height: 1.5rem;
-	height: 2.5rem;
+  line-height: 1.5rem;
+  height: 2.5rem;
   width: 50%;
-  margin-left: 15%;
-	float: left;
-	color: #ffffff;
-	font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-	font-size: 18px;
-
-  /*padding: 15px;
-  margin-bottom: 15px;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-left: 15%;*/
+  margin: 0 auto;
+  float: left;
+  font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  color: #FFFFFF !important;
 }
-
 .submit {
-  border: 2px solid #ddd;
-	border-radius: 0;
-	border-right-width: 2px;
-	border-bottom-right-radius: 7px;
-	border-top-right-radius: 7px;
-  padding: 0.75rem;
-	line-height: 1.5rem;
-	height: 4.26rem;
-	min-width: 10em;
-	display: inline-block;
-	float: left;
-  background: rgba(255,255,255,0.3);
-  color: #ffffff;
+  align-items: flex-start;
+  border: 2px solid #DDD;
+  border-radius: 0;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  /*border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-width: 1;*/
+  /*padding: 0.75rem;*/
+  line-height: 1.5rem;
+  height: 4.26rem;
+  min-width: 10em;
+  display: inline-block;
+  float: center;
+  background: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
   font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 18px;
   text-align: center;
-}
-
-.submit:hover {
-  background: rgba(255, 255, 255, 0.1);
-  outline: 0
+  transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+@media (max-width: 413px) {
+  .form {
+    /*display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;*/
+  }
+  #slack-email.field {
+    border-radius: 8px;
+    border-right-width: 2px;
+  }
+  .submit {
+    border-radius: 8px;
+  }
+}
+.submit:hover {
+  background: rgba(255, 255, 255, 0.2);
+  outline: 0;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;
 }
 .error {
-  color: #FE7070;
+  color: #CFCFC4;
   font-weight: 700;
   font-size: 25px;
 }
@@ -180,5 +188,20 @@ a {
   font-weight: 700;
 }
 a:visited, a:hover {
-  color: #7EB6FF;
+  color: #FFFFFF;
+}
+::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+:-moz-placeholder {
+  color: #FFFFFF;
+}
+::-moz-placeholder {
+  color: #FFFFFF;
+}
+:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+textarea:focus, input:focus {
+  outline: none;
 }
