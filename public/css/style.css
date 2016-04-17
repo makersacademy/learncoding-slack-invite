@@ -29,28 +29,12 @@ h1, h2, h3, h4, h5, h6 {
 html {
   -webkit-font-smoothing: antialiased;
   line-height: 1.5rem;
-  margin: 0;
-  padding: 0;
   font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   background: #FFF url(../images/dan-and-students-overhead-70.jpg) center top no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
-
-/*.header, .content, .bottom, .sep2 {
-  width: 100%;
-  float: left;
-}*/
-
-.header {
-  /*margin-top: 180px;
-  margin-bottom: 40px;*/
-}
-/*.form {
-  display: block !important;
-  margin: 0 auto !important;
-}*/
 div#fixedheader {
   position: fixed;
   top: 0px;
@@ -101,76 +85,68 @@ h3 {
   font-weight: 600;
   color: #FFFFFF;
 }
-#join-form {
+#join-form.form {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 6em;
-  margin-bottom: 1.5rem;
+  width: 50%;
+  margin: auto;
 }
 #slack-email.field {
-  transition: border-color;
+  display: block;
   background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  float: left;
+  padding: 0.75rem;
+  transition: border-color;
+  height: 2.5rem;
+  min-width: 67.5%;
   border: 2px solid #DDD;
   border-right-width: 0;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
-  display: block;
-  padding: 0.75rem;
   line-height: 1.5rem;
-  height: 2.5rem;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  /*margin-left: 15%;*/
-  margin: 0 auto;
-  float: left;
   font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 18px;
   color: #FFFFFF !important;
 }
-.submit {
-  align-items: flex-start;
+#slack-email.submit {
+  display: block;
+  background: rgba(255, 255, 255, 0.4);
+  /*margin: auto;*/
   border: 2px solid #DDD;
-  border-radius: 0;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
-  /*border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-width: 1;*/
-  /*padding: 0.75rem;*/
   line-height: 1.5rem;
   height: 4.26rem;
   min-width: 10em;
-  display: inline-block;
-  float: center;
-  background: rgba(255, 255, 255, 0.4);
-  color: #FFFFFF;
   font-family: "futura-pt", Futura, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 18px;
+  color: #FFFFFF;
   text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-  vertical-align: middle;
-  white-space: nowrap;
 }
-@media (max-width: 413px) {
+@media screen and (max-width: 1269px) {
   .form {
-    /*display: block !important;
+    display: block;
     margin-left: auto !important;
-    margin-right: auto !important;*/
+    margin-right: auto !important;
   }
   #slack-email.field {
     border-radius: 8px;
     border-right-width: 2px;
+    float: inherit;
   }
-  .submit {
+  #slack-email.submit {
+    margin: auto;
     border-radius: 8px;
+    margin-top: 20px;
   }
 }
-.submit:hover {
+#slack-email.submit:hover {
   background: rgba(255, 255, 255, 0.2);
   outline: 0;
   transition-property: all;
