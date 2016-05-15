@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/makersacademy/learncoding-slack-invite.png?label=ready&title=Ready)](https://waffle.io/makersacademy/learncoding-slack-invite)
 Slack Invite Automation (re-used from : https://github.com/outsideris/slack-invite-automation)
 ------------
 
